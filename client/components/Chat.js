@@ -11,7 +11,7 @@ const Chat = () => {
   useEffect(() => {
     // connect to the backend uri using socket 
     socket = io(BACKEND_URI);
-    // broadcast the messages
+    // listen for broadcasted messages
     socket.on('new message', (data) => {
       addMessages(oldMessages => [...oldMessages, <li key={data}>{data}</li>]);
     });

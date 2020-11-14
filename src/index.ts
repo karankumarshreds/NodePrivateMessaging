@@ -16,9 +16,17 @@ io.on('connection', (socket) => {
     (`User has sent message : ${message}`);
     io.sockets.emit('new message', message);
   });
-  socket.on('new user', ({ user }) => {
-    users.push(user);
-    console.log(users);
+  socket.on('new user', ({ user }, callback: (params: any) => void) => {
+    try {
+      callback(true);
+      // associate socket with the individual user
+      // @ts-ignore 
+      socket.uid = user.uid;
+      users.push(user);
+      socket.emit('users', { users });
+    } catch (err) {
+      callback(false);
+    }
   });
 
 });

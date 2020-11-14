@@ -14,7 +14,9 @@ const index = () => {
   useEffect(() => {
     socket = io(BACKEND_URI);
     // listen for the new users 
-    // socket.on('new user')
+    socket.on('users', ({ users }) => {
+      console.log(`New list of users ${JSON.stringify(users)}`);
+    });
   }, [user]);
   // save the user and show the chat feature 
   const onSubmit = async (e) => {
@@ -24,7 +26,9 @@ const index = () => {
       uid: uuidv4(),
       name
     }
-    socket.emit('new user', { user });
+    socket.emit('new user', { user }, (bool) => {
+      console.log(`The new user was created: ${bool}`);
+    });
     setName('');
   };
   const renderContent = () => {

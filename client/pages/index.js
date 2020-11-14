@@ -1,47 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import io from 'socket.io-client';
-
-let socket;
-let BACKEND_URI = 'http://localhost:3001';
+import Chat from '../components/Chat';
 
 const index = () => {
-  const [message, setMessage] = useState('');
-  const [messages, addMessages] = useState([]);
-  // connect to the backend when page loads 
-  useEffect(() => {
-    // connect to the backend uri using socket 
-    socket = io(BACKEND_URI);
-    // broadcast the messages
-    socket.on('new message', (data) => {
-      addMessages(oldMessages => [...oldMessages, <li key={data}>{data}</li>]);
-    });
-    // disconnect when component gets unmounted
-    return () => {
-      socket.emit('disconnect');
-      socket.off();
-      console.log('Disconnecting the room');
-    }
-  }, []);
-  // function to send the message
-  const sendMessage = (e) => {
+  const [name, setName] = useState('');
+  const [renderChat, setRenderChat] = useState(false);
+  const onSubmit = (e) => {
     e.preventDefault();
-    socket.emit('message', { message });
-    setMessage('');
+    setRenderChat(true);
+    setName('');
   };
-  return (
-    <div>
-      <h1>Socket io private messaging</h1>
-      <form onSubmit={e => sendMessage(e)}>
-        <input placeholder="Type message"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
+  const renderContent = () => {
+    if (renderChat) {
+      return <Chat />
+    } else {
+      return <form onSubmit={e => onSubmit(e)}>
+        <input
+          onChange={e => setName(e.target.value)}
+          placeholder="Enter your name"
+          value={name}
         />
-        <button type="submit">Send message</button>
+        <button type="submit">Enter the chat</button>
       </form>
-      <ul>
-        {messages}
-      </ul>
-    </div>
+    }
+  }
+  return (
+    renderContent()
   )
 }
 

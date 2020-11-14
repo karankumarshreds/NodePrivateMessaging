@@ -13,7 +13,11 @@ const Chat = () => {
     socket = io(BACKEND_URI);
     // listen for broadcasted messages
     socket.on('new message', (data) => {
-      addMessages(oldMessages => [...oldMessages, <li key={data}>{data}</li>]);
+      addMessages(oldMessages => [...oldMessages,
+      <li key={data.message}>
+        {data.message}: by : {data.uid}
+      </li>
+      ]);
     });
     // disconnect when component gets unmounted
     return () => {

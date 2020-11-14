@@ -15,9 +15,9 @@ const index = () => {
     socket = io(BACKEND_URI);
     // listen for the new users 
     socket.on('users', ({ users }) => {
-      console.log(`New list of users ${JSON.stringify(users)}`);
+      setUsers([...users]);
     });
-  }, [user]);
+  }, []);
   // save the user and show the chat feature 
   const onSubmit = async (e) => {
     e.preventDefault();

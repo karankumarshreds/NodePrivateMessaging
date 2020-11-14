@@ -13,8 +13,8 @@ let users: {}[] = [];
 io.on('connection', (socket) => {
 
   socket.on('message', ({ message }) => {
-    (`User has sent message : ${message}`);
-    io.sockets.emit('new message', message);
+    // @ts-ignore
+    io.sockets.emit('new message', { message, uid: socket.uid });
   });
   socket.on('new user', ({ user }, callback: (params: any) => void) => {
     try {
@@ -23,7 +23,7 @@ io.on('connection', (socket) => {
       // @ts-ignore 
       socket.uid = user.uid;
       users.push(user);
-      socket.emit('users', { users });
+      io.sockets.emit('users', { users });
     } catch (err) {
       callback(false);
     }

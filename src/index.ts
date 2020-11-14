@@ -10,7 +10,8 @@ const io = socketio(server);
 io.on('connection', (socket) => {
 
   socket.on('message', ({ message }) => {
-    console.log(`User has sent message : ${message}`);
+    (`User has sent message : ${message}`);
+    io.sockets.emit('new message', message);
   });
 
 });

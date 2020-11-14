@@ -6,10 +6,15 @@ let BACKEND_URI = 'http://localhost:3001';
 
 const index = () => {
   const [message, setMessage] = useState('');
+  const [messages, addMessages] = useState([]);
   // connect to the backend when page loads 
   useEffect(() => {
     // connect to the backend uri using socket 
     socket = io(BACKEND_URI);
+    // broadcast the messages
+    socket.on('new message', (data) => {
+      addMessages(oldMessages => [...oldMessages, <li key={data}>{data}</li>]);
+    });
     // disconnect when component gets unmounted
     return () => {
       socket.emit('disconnect');
@@ -33,6 +38,9 @@ const index = () => {
         />
         <button type="submit">Send message</button>
       </form>
+      <ul>
+        {messages}
+      </ul>
     </div>
   )
 }

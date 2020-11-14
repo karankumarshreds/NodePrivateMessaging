@@ -10,10 +10,7 @@ const index = () => {
   useEffect(() => {
     // connect to the backend uri using socket 
     socket = io(BACKEND_URI);
-    // socket.emit('join', { name: 'Karan' }, ({ error }) => {
-    //   console.log(error);
-    // });
-    // disconnect when component unmounts
+    // disconnect when component gets unmounted
     return () => {
       socket.emit('disconnect');
       socket.off();
@@ -24,6 +21,7 @@ const index = () => {
   const sendMessage = (e) => {
     e.preventDefault();
     socket.emit('message', { message });
+    setMessage('');
   };
   return (
     <div>

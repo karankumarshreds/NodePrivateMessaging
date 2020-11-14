@@ -8,6 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+app.use(require('./routes'));
 
 server.listen(3000, () => {
   console.log('Server listening at 3000');

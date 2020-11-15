@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-15T19:22:04.112Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="n2qZkY0ICNTzqv3AzJuq" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-15T19:25:25.648Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="RDKHPrOxUCsWPzuWhmqC" version="13.9.2" type="github">
   <diagram id="ERtJUcit2QA-R1B6kV4Z" name="Page-1">
     <mxGraphModel dx="973" dy="343" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -42,17 +42,34 @@
         <mxCell id="ntHKBC9doP0J3iSfxOcG-17" value="sends message" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="473" y="70" width="124" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ntHKBC9doP0J3iSfxOcG-18" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;to: 111&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;sender: 444&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;msg: &quot;Hey there!&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shadow=1;" vertex="1" parent="1">
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ntHKBC9doP0J3iSfxOcG-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="559" y="275.4745635986328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-18" value="&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;to: 222&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;sender: 444&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;span&gt;msg: &quot;Hey there!&quot;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="469" y="96" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ntHKBC9doP0J3iSfxOcG-19" value="keeps record of who is online&lt;br&gt;&lt;b&gt;{ userId: 222, firstName: Dobby, socketId: xxx }&lt;/b&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="691" y="343.5" width="168" height="141" as="geometry" />
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-19" value="keeps record of who is online&lt;br&gt;&lt;b&gt;{ userId: 222, firstName: Dobby, socketId: xxx }&lt;/b&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;shadow=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="691" y="291.5" width="168" height="141" as="geometry" />
         </mxCell>
-        <mxCell id="ntHKBC9doP0J3iSfxOcG-20" value="" style="whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="416" y="332" width="267.5" height="164" as="geometry" />
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-20" value="" style="whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="416" y="280" width="267.5" height="164" as="geometry" />
         </mxCell>
         <mxCell id="ntHKBC9doP0J3iSfxOcG-21" value="&lt;b&gt;Backend&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="308" width="60" height="18" as="geometry" />
+          <mxGeometry x="421" y="262" width="60" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.954;entryY=0.226;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ntHKBC9doP0J3iSfxOcG-27" target="ntHKBC9doP0J3iSfxOcG-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-27" value="check if &lt;b&gt;{ to: 222 } &lt;/b&gt;is online" style="whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="297" width="178" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-29" value="if &lt;b&gt;yes, &lt;/b&gt;emit to that socket and save message in DB" style="whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="347" width="178" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-30" value="if &lt;b&gt;no&lt;/b&gt;, then just save in db" style="whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="397" width="178" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

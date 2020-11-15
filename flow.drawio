@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-15T19:25:25.648Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="RDKHPrOxUCsWPzuWhmqC" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-15T19:26:47.184Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="RE2MoGqzhjTBnhTwdHfB" version="13.9.2" type="github">
   <diagram id="ERtJUcit2QA-R1B6kV4Z" name="Page-1">
     <mxGraphModel dx="973" dy="343" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="n_6YIvcGTNlwgTO5OjOo-1" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;userId:&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;firstName:&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&amp;nbsp;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="40" y="40" width="168" height="189" as="geometry" />
         </mxCell>
-        <mxCell id="ntHKBC9doP0J3iSfxOcG-1" value="USER MODEL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-1" value="&lt;b&gt;USER MODEL&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="49" y="46" width="102" height="20" as="geometry" />
         </mxCell>
         <mxCell id="ntHKBC9doP0J3iSfxOcG-2" value="userId: 111, firstName: John" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
@@ -70,6 +70,12 @@
         </mxCell>
         <mxCell id="ntHKBC9doP0J3iSfxOcG-30" value="if &lt;b&gt;no&lt;/b&gt;, then just save in db" style="whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="464" y="397" width="178" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-32" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;to:&amp;nbsp;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;sender:&amp;nbsp;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;message:&amp;nbsp;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;createAt:&amp;nbsp;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="237" y="280" width="168" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="ntHKBC9doP0J3iSfxOcG-33" value="&lt;b&gt;CHAT MODEL&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="285" width="102" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
